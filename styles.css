@@ -99,8 +99,10 @@ h2 {
 display: flex;
 justify-content: center;
 align-items: center;
+
 }
 .about__img--wrapper {
+    
     width: 40%;
     padding: 0 24px;
     padding-bottom: 50px;
@@ -140,7 +142,8 @@ form{
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 input, textarea {
@@ -170,4 +173,73 @@ footer {
 
 .footer__link {
     padding: 0 16px;
+}
+
+/* Small phones, Tablets, large smartphones*/
+@media (max-width: 728px) { 
+    .row {
+        flex-direction: column;
+    }
+    .home__description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home__description--button {
+        max-width: 240px;
+
+
+    }
+
+    h1  {
+        text-align: center;
+        font-size: 60px;
+
+    }
+    .subheader {
+        text-align: center;
+        font-size: 28px;
+    
+    }
+
+    ul {
+        display: none;
+
+    }
+
+    .section__description {
+        flex-direction: column;
+    }
+
+    .section__description-wrapper {
+        width: 100%;
+    
+    }
+
+    .about__img--wrapper {
+
+    width: 100%;
+    }
+
+    .footer__logo {
+        max-width: 360px;
+
+
+    }
+    footer { 
+        padding: 48px 24px;
+    }
+    .footer__link {
+        padding: 0 8px;
+        font-size: 18px;
+    }
+    .footer__links {
+        margin-bottom: 24px;
+    
+    }
+    }
+.section__description--para {
+    margin: 10px;
 }
